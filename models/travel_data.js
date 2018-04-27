@@ -10,10 +10,7 @@ var TravelSchema = new Schema(
     location: String,
     date: String,
     severity: String,
-    borough: String,
-    casualties: [{
-      type: String, age: Number, class: String, severity: String, mode: String, ageBand: String }],
-    vehicles: [{ type1: String, type2: String}]
+    borough: String
   }
 );
 
