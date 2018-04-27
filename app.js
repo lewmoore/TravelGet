@@ -1,11 +1,11 @@
 const fastify = require('fastify')();
-const mongoose = require('mongoose');
-const mongoDB = 'mongodb://127.0.0.1/travel_db';
-mongoose.connect(mongoDB);
-mongoose.connect(mongoDB);
-mongoose.Promise = global.Promise;
 
-var db = mongoose.connection;
+fastify.register(require('fastify-mongoose'), {
+  uri: 'mongodb://localhost/test_db'
+}, err => {
+  if (err) throw err
+})
+
 var appId = 'c379f1c3';
 var appKey = '73ea15c39e18152d049f656c8d7d86f7';
 var tfl = require('tfl.api')(appId, appKey);
