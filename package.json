@@ -1,0 +1,25 @@
+{
+  "name": "travelget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lewmoore/TravelGet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lewmoore/TravelGet/issues"
+  },
+  "homepage": "https://github.com/lewmoore/TravelGet#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "fastify": "^1.3.1",
+    "mocha": "^5.1.1"
+  }
+}
